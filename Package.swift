@@ -9,7 +9,7 @@ let package = Package (
         .iOS(.v10)
     ],
      products: [
-         .library(name: "UseDesk", targets: ["UseDesk"])
+         .library(name: "UseDesk", type: .dynamic, targets: ["UseDesk"])
      ],
      dependencies: [
         .package(name: "SocketIO", url: "https://github.com/socketio/socket.io-client-swift", from: "16.0.0"),
